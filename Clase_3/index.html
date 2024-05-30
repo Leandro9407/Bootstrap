@@ -51,7 +51,7 @@
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-danger mx-2" type="submit">Buscar</button>
-              <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Registrarse</button>
+              <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Ingresar</button>
             </form>
           </div>
         </div>
@@ -104,9 +104,9 @@
             <div class="card">
               <img src="https://images.wallpaperscraft.com/image/single/glock_gun_weapon_209775_1280x720.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Servicios</h5>
+                <h5 class="card-title">Servicios adicionales</h5>
                 <p class="card-text">Complementa tus habilidades con muestros mejores servicios.</p>
-                <a href="#" class="btn btn-primary">Más información</a>
+                <a href="#" class="btn btn-dark text-light">Más información</a>
               </div>
             </div>
           </div>
@@ -114,9 +114,9 @@
             <div class="card">
               <img src="https://images.wallpaperscraft.com/image/single/rifle_sight_weapon_210541_1280x720.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Adicionales</h5>
+                <h5 class="card-title">Accesorios</h5>
                 <p class="card-text">Encuentra todos los accesorios adicionales para tus armas.</p>
-                <a href="#" class="btn btn-primary">Más información</a>
+                <a href="#" class="btn btn-dark text-light">Más información</a>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@
               <div class="card-body">
                 <h5 class="card-title">Entrenamiento</h5>
                 <p class="card-text">Conoce tu armamento y aprende a usarlo correctamente.</p>
-                <a href="#" class="btn btn-primary">Más información</a>
+                <a href="#" class="btn btn-dark text-light">Más información</a>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="text-light" class="modal-title fs-5" id="exampleModalLabel">Datos personales</h1>
+          <h1 class="text-light" class="modal-title fs-5" id="exampleModalLabel">Inicia de sesión</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -148,7 +148,7 @@
           <!-- Overview   -->
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="text-light" class="form-label">Correo electrónico</label>
+              <label for="exampleInputEmail1" class="text-light" class="form-label">Correo electrónico/Nickname</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text"></div>
             </div>
@@ -160,13 +160,15 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="text-light" class="form-check-label" for="exampleCheck1">Recordarme</label>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
-
+          <div class="recuperar">
+            <a class="nav-link text-light mb-3" href="#">¿Olvidaste la contraseña?</a>
+        </div>
+          <button type="button" class="btn btn-secondary">Registrarme</button>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar cambios</button>
+          <button type="button" class="btn btn-secondary">Ingresar</button>
         </div>
       </div>
     </div>
@@ -220,12 +222,16 @@
   <div class="col-lg-6 col-md-6">
     <form>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Nombres</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+        <input type="email" class="form-control border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Apellidos</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="exampleInputPassword1" class="form-label">Apellido</label>
+        <input type="password" class="form-control border-secondary" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Dirección</label>
+        <input type="password" class="form-control border-secondary" id="exampleInputPassword1">
       </div>
       
     
@@ -235,17 +241,18 @@
     <form>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" class="form-control border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="exampleInputPassword1" class="form-label">Teléfono</label>
+        <input type="password" class="form-control border-secondary" id="exampleInputPassword1">
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Barrio</label>
+        <input type="password" class="form-control border-secondary" id="exampleInputPassword1">
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      
+      <button type="submit" class="btn btn-dark text-light">Enviar</button>
     
     
     </form>
